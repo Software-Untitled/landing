@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Montserrat";
+	src: font-url("../fonts/Montserrat-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: bold;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: font-url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: font-url("../fonts/Montserrat-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
 * {
 	padding: 0px;
 	margin: 0px;
@@ -29,6 +47,8 @@ html, body {
 	position: relative;
 	width: 100%;
 	color: #000;
+	-ms-touch-action: none;
+	touch-action: none;
 }
 
 body {
