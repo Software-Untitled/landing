@@ -1,18 +1,18 @@
 @font-face {
 	font-family: "Montserrat";
-	src: font-url("../fonts/Montserrat-Bold.ttf") format("truetype");
+	src: font-url("fonts/Montserrat-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: bold;
 }
 @font-face {
 	font-family: "Montserrat";
-	src: font-url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+	src: font-url("fonts/Montserrat-SemiBold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Montserrat";
-	src: font-url("../fonts/Montserrat-Medium.ttf") format("truetype");
+	src: font-url("fonts/Montserrat-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }

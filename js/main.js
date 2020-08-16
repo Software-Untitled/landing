@@ -26,7 +26,7 @@ window.onscroll = function() {
 }
 
 
-var arr = ['branding', 'development', 'design', 'prototyping', 'untitled']
+var arr = ['Branding', 'Development', 'Design', 'Prototyping', 'Untitled']
 
 
 function changeTitle (arr) {
