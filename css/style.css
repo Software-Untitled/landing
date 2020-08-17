@@ -256,7 +256,7 @@ body.lock {
 @media (max-width: 479.98px) {
 	.footerblock {
 		width: 320px;
-		padding: 61px 0 31px 0;
+		padding: 61px 4px 31px 4px;
 		margin: 0;
 	}
 }
