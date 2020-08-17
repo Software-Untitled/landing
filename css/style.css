@@ -160,13 +160,14 @@ body.lock {
 	transition: top 0.3s;
 	background: #0f0f0f;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
 	.headerblock {
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
-		padding: 50px 28px 44px 27px;
+		padding: 50px 0 44px 0;
 		position: static;
+		width: 320px;
 	}
 }
 .headerblock__logo {
@@ -182,7 +183,7 @@ body.lock {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
 	.headerblock__logo {
 		width: 100%;
 		height: 100%;
@@ -199,7 +200,7 @@ body.lock {
 	font-size: 18px;
 	line-height: 22px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
 	.headerblock__title {
 		display: none;
 	}
@@ -215,7 +216,7 @@ body.lock {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
 	.headerblock .contact {
 		display: none;
 	}
@@ -254,7 +255,8 @@ body.lock {
 }
 @media (max-width: 479.98px) {
 	.footerblock {
-		padding: 61px 31px 31px 31px;
+		width: 320px;
+		padding: 61px 0 31px 0;
 		margin: 0;
 	}
 }
@@ -289,6 +291,8 @@ body.lock {
 @media (max-width: 479.98px) {
 	.footerblock__email {
 		font-size: 18px;
+		text-align: left;
+		width: 100%;
 	}
 }
 .footerblock__links {
@@ -384,25 +388,31 @@ body.lock {
 
 .content {
 	max-width: 1500px;
-	padding: 0 80px;
+	padding: 0 157px;
 }
 @media (max-width: 767.98px) {
 	.content {
-		padding: 0 28px 0 27px;
+		padding: 0 80px 0 80px;
+	}
+}
+@media (max-width: 479.98px) {
+	.content {
+		width: 320px;
+		padding: 0;
 	}
 }
 
 .maintitle {
 	text-align: center;
 	font-weight: 700;
-	font-size: 60px;
+	font-size: 59px;
 	letter-spacing: 0.05em;
 	line-height: 73px;
 	margin-top: 115px;
 	margin-bottom: 64px;
 	z-index: 50;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
 	.maintitle {
 		display: none;
 	}
