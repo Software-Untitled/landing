@@ -143,7 +143,7 @@ body.lock {
 .headerblock {
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
-	padding: 28px 60px 35px 60px;
+	padding: 28px 60px 35px 35px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -153,8 +153,6 @@ body.lock {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	position: fixed;
-	top: 0;
 	-webkit-transition: top 0.3s;
 	-o-transition: top 0.3s;
 	transition: top 0.3s;
@@ -195,42 +193,14 @@ body.lock {
 		width: 100%;
 	}
 }
-.headerblock__title {
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 22px;
+
+.pseudoheader {
+	padding: 28px 60px 35px 60px;
+	position: fixed;
+	top: -110px;
 }
 @media (max-width: 767.98px) {
-	.headerblock__title {
-		display: none;
-	}
-}
-.headerblock .contact {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-@media (max-width: 767.98px) {
-	.headerblock .contact {
-		display: none;
-	}
-}
-.headerblock .contact__text {
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 22px;
-}
-.headerblock .contact__icon {
-	margin-left: 40px;
-}
-@media (max-width: 767.98px) {
-	.headerblock .contact__icon {
+	.pseudoheader {
 		display: none;
 	}
 }
@@ -315,6 +285,7 @@ body.lock {
 }
 .footerblock__linkItem {
 	margin-left: 20px;
+	min-width: 72.02px;
 }
 @media (max-width: 479.98px) {
 	.footerblock__linkItem {
@@ -323,12 +294,13 @@ body.lock {
 }
 .footerblock__linkItem a {
 	color: #F8F8F8;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 }
-.footerblock__linkItem #fb:visited {
-	color: #2C87FF;
-}
-.footerblock__linkItem #lin:visited {
-	color: #21AEFF;
+.footerblock__linkItem a:active {
+	color: silver;
+	font-size: 15px;
 }
 .footerblock__subtitle {
 	display: -webkit-box;
@@ -408,7 +380,6 @@ body.lock {
 	font-size: 59px;
 	letter-spacing: 0.05em;
 	line-height: 73px;
-	margin-top: 115px;
 	margin-bottom: 64px;
 	z-index: 50;
 }

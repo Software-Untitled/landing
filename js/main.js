@@ -17,16 +17,22 @@ function contactUs () {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-110px";
+  if ( prevScrollpos > document.documentElement.clientHeight ){
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header1").style.top = "0";
+    } else {
+      document.getElementById("header1").style.top = "-110px";
+    }
   }
+  if ( prevScrollpos < document.documentElement.clientHeight ) {
+    document.getElementById("header1").style.top = "-110px";   
+  }
+ 
   prevScrollpos = currentScrollPos;
 }
 
 
-var arr = ['Branding', 'Development', 'Design', 'Prototyping', 'Untitled']
+var arr = [ 'Design', 'Prototyping', 'Untitled', 'Branding', 'Development']
 
 
 function changeTitle (arr) {
